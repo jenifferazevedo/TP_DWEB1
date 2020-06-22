@@ -1,0 +1,20 @@
+
+.bg-light {
+  background-color: #bbe7e0!important;
+  border-top: 0.5rem solid #6c4232;
+  border-bottom: 0.5rem solid #6c4232;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar-brand img {
+  width: 10rem;
+}
+.navbar-nav {
+  margin-left: auto;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+/*Main Home*/
