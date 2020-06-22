@@ -18,3 +18,36 @@
 }
 
 /*Main Home*/
+.carousel {
+  height: 85vh;
+  overflow: hidden;
+}
+.carousel-item img {
+  min-width: 600px;
+  width: 100%;
+  height: auto;
+  min-height: 85vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+.carousel-caption {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  min-width: 300px;
+  padding: 20px;
+  top: 50vh;
+  left: 5%;
+  height: 150px;
+}
+.carousel-indicators {
+  margin: 10px 0 10px 0;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
+  background-color: rgba(110, 255, 228, 0.781);
+}
