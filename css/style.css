@@ -51,3 +51,28 @@
   margin: 0 10px 0 10px;
   background-color: rgba(110, 255, 228, 0.781);
 }
+/*Sobre*/
+#sobre {
+  background-color: rgba(110, 255, 228, 0.781);
+}
+#sobre .container {
+  background-color: white;
+  padding: 80px 30px;
+}
+#sobre h2 {
+  border-bottom: 5px solid #6c4232;
+  margin-bottom: 15px;
+}
+#sobre .imgRow {
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+#sobre .imgRow img {
+  height: auto;
+  min-height: 100px;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+}
