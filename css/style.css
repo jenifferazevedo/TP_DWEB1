@@ -1,4 +1,4 @@
-
+/*Header e nav*/
 .bg-light {
   background-color: #bbe7e0!important;
   border-top: 0.5rem solid #6c4232;
@@ -16,10 +16,20 @@
   font-weight: 600;
   align-items: center;
 }
+/*Footer*/
+footer {
+  background-color: rgb(108, 66, 50);
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+footer p {
+  margin: 0;
+  padding: 5px 20px;
+}
 
 /*Main Home*/
 .carousel {
-  height: 85vh;
+  height: 82vh;
   overflow: hidden;
 }
 .carousel-item img {
@@ -57,11 +67,12 @@
 }
 #sobre .container {
   background-color: white;
-  padding: 80px 30px;
+  padding: 50px 30px 20px 30px;
 }
-#sobre h2 {
+h2 {
   border-bottom: 5px solid #6c4232;
   margin-bottom: 15px;
+  display: inline-flex;
 }
 #sobre .imgRow {
   height: 100px;
@@ -75,4 +86,56 @@
   width: 20%;
   padding: 0;
   margin: 0;
+}
+
+/*Curso*/
+#curso {
+  background: repeating-linear-gradient(
+  180deg,
+rgba(110, 255, 228, 0.781),
+rgba(110, 255, 228, 0.781) 40px,
+#30b8a1 40px,
+#30b8a1 60px
+);
+}
+#curso .container {
+  padding: 50px 30px;
+  background-color: white;
+}
+#curso .cursoApresentacao {
+  padding: 50px 0 50px 0;
+}
+#curso ul {
+  font-size: 14px;
+}
+/*Preço*/
+#precos .row {
+  height: 200px;
+  background:
+  /* top, transparent red, faked with gradient */
+  linear-gradient(
+    rgba(70, 27, 10, 0.781),
+    rgba(70, 27, 10, 0.781)
+  ),
+  /* bottom, image */
+  url('../img/curso/fotoChamada.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+#precos h3 {
+  text-align: center;
+  padding: 30px 40px;
+  font-size: 40px;
+}
+#contacto {
+  height: 400px;
+}
+#contacto {
+  background-color: rgba(110, 255, 228, 0.781);
+}
+#contacto .container {
+  background-color: white;
+  padding: 50px 30px 20px 30px;
 }
