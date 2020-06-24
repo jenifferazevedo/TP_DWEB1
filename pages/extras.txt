@@ -1,7 +1,0 @@
- - iframe do google maps
- - animação por keyframes
- - Dropdown no menu
- - Background de tranparência em video
- - collapse accordion
- - Criação de logo
- - Edição de media (imagens, vídeos e audios)

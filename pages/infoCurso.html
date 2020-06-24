@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#"><img src="../img/logo.svg" alt="Carioca"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <button type="button" class="btn btn-primary"><a class="nav-item nav-link" href="#" tabindex="-1"
+          <a class="nav-item nav-link" href="../index.html">Home</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle actived" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Curso
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#infocurso">Conteudo</a>
+              <a class="dropdown-item" href="#faq">Faq</a>
+            </div>
+          </div>
+          <a class="nav-item nav-link" href="../index.html#contacto">Contacto</a>
+          <button type="button" class="btn btnChamada"><a href="pages/infoCurso.html" tabindex="-1"
               aria-disabled="true">Increva-se</a></button>
         </div>
       </div>
@@ -53,7 +62,7 @@
             <div class="row chamada">
               <div class="col-lg-12 p-0">
                 <h3>Oferta limitada!! De <span>€1500,00</span> por <span>€150,00</span></h3>
-                <button>Inscreva-se!</button>
+                <button class="btn btnChamada">Inscreva-se!</button>
               </div>
             </div>
           </div>
@@ -93,12 +102,13 @@
           </div>
           <div class="col-lg-5">
             <div class="card bg-dark text-white">
-              <img class="card-img" src="../img/produtos/bonus.png" alt="Card image">
+              <img class="card-img" src="../img/produtos/bonus.png" alt="Livro de receitas">
               <div class="card-img-overlay">
                 <h5 class="card-title">Ganhe um bônus!</h5>
-                <p class="card-text">Ao fazer a inscrição até 26/06 ganhe um livro contendo mais de 1500 receitas originais de brigadeiros gourmet!  </p>
+                <p class="card-text">Ao fazer a inscrição até 26/06 ganhe um livro contendo mais de 1500 receitas
+                  originais de brigadeiros gourmet! </p>
                 <p class="card-text">Inteiramente de borla!!!</p>
-                <button>Increva-se agora!</button>
+                <button class="btn btnChamada">Increva-se agora!</button>
               </div>
             </div>
           </div>
@@ -108,18 +118,18 @@
             <div class="col-lg-12">
               <div class="gridObject">
                 <div>
-                  <img src="../img/brigadeiros/alpino.jpg" alt="">
-                  <img src="../img/brigadeiros/amendoas.jpg" alt="">
-                  <img src="../img/brigadeiros/cachaca.jpg" alt="">
-                  <img src="../img/brigadeiros/cafe.jpg" alt="">
-                  <img src="../img/brigadeiros/castanhadocaju.jpg" alt="">
+                  <img src="../img/brigadeiros/alpino.jpg" alt="Brigadeiro de Alpino">
+                  <img src="../img/brigadeiros/amendoas.jpg" alt="Brigadeiro de amendoas">
+                  <img src="../img/brigadeiros/cachaca.jpg" alt="Brigadeiro de cachaça">
+                  <img src="../img/brigadeiros/cafe.jpg" alt="Brigadeiro de cafe">
+                  <img src="../img/brigadeiros/castanhadocaju.jpg" alt="Brigadeiro de castanha">
                 </div>
                 <div>
-                  <img src="../img/brigadeiros/churros.jpg" alt="">
-                  <img src="../img/brigadeiros/coco.jpg" alt="">
-                  <img src="../img/brigadeiros/nozes.jpg" alt="">
-                  <img src="../img/brigadeiros/nutella.jpg" alt="">
-                  <img src="../img/brigadeiros/pistache.jpg" alt="">
+                  <img src="../img/brigadeiros/churros.jpg" alt="Brigadeiro de churros">
+                  <img src="../img/brigadeiros/coco.jpg" alt="Brigadeiro de coco">
+                  <img src="../img/brigadeiros/nozes.jpg" alt="Brigadeiro de nozes">
+                  <img src="../img/brigadeiros/nutella.jpg" alt="Brigadeiro de nutella">
+                  <img src="../img/brigadeiros/pistache.jpg" alt="Brigadeiro de pistache">
                 </div>
               </div>
             </div>
@@ -145,7 +155,10 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
-                    O Curso da Carioca é totalmente online, estruturado em blocos de conteudo que duram entre 5 e 10 minutos para possibilitar que qualquer um possa aprender algo novo mesmo nos trajetos para o trabalho ou casa. Além disso, o curso conta com acesso vitalício e mesmo a um ritmo de 5 minutos por dia é garantida a formação completa e uma vida empreendedora!
+                    O Curso da Carioca é totalmente online, estruturado em blocos de conteudo que duram entre 5 e 10
+                    minutos para possibilitar que qualquer um possa aprender algo novo mesmo nos trajetos para o
+                    trabalho ou casa. Além disso, o curso conta com acesso vitalício e mesmo a um ritmo de 5 minutos por
+                    dia é garantida a formação completa e uma vida empreendedora!
                   </div>
                 </div>
               </div>
@@ -160,7 +173,8 @@
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
-                    O curso da Carioca deve ser visto como um investimento. O rendimento proporcionado pelo curso facilmente supera o custo de inscrição. Basta dedicação!
+                    O curso da Carioca deve ser visto como um investimento. O rendimento proporcionado pelo curso
+                    facilmente supera o custo de inscrição. Basta dedicação!
                   </div>
                 </div>
               </div>
@@ -175,7 +189,9 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
-                    Não se trata de idade, mas de vontade! O curso é dividido em módulos teóricos e práticos, além de possuir trabalhos em grupo e uma didática perfeita que possibilita que qualquer pessoa (qualquer uma mesmo) possa se tornar um mestre dos brigadeiros.
+                    Não se trata de idade, mas de vontade! O curso é dividido em módulos teóricos e práticos, além de
+                    possuir trabalhos em grupo e uma didática perfeita que possibilita que qualquer pessoa (qualquer uma
+                    mesmo) possa se tornar um mestre dos brigadeiros.
                   </div>
                 </div>
               </div>
@@ -184,8 +200,16 @@
         </div>
       </div>
     </section>
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom d-flex align-items-center">
       <p>Site de estudos, desenvolvido por Jeniffer de Azevedo e José Joaquim de Azevedo</p>
+      <a href="pageFinal.html" class="ml-auto mr-1 linkImportante"><svg class="bi bi-emoji-sunglasses" width="1em"
+          height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path fill-rule="evenodd"
+            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM6.5 6.497V6.5h-1c0-.568.447-.947.862-1.154C6.807 5.123 7.387 5 8 5s1.193.123 1.638.346c.415.207.862.586.862 1.154h-1v-.003l-.003-.01a.213.213 0 0 0-.036-.053.86.86 0 0 0-.27-.194C8.91 6.1 8.49 6 8 6c-.491 0-.912.1-1.19.24a.86.86 0 0 0-.271.194.213.213 0 0 0-.036.054l-.003.01z" />
+          <path
+            d="M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM9 5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-2-2V5z" />
+        </svg> Sobre o projeto</a>
     </footer>
   </main>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

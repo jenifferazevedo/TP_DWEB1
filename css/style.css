@@ -1,3 +1,6 @@
+a:hover {
+  text-decoration: none;
+}
 /*Header e nav*/
 .bg-light {
   background-color: #bbe7e0!important;
@@ -16,6 +19,28 @@
   font-weight: 600;
   align-items: center;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: #371617!important;
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #316b61!important;
+}
+.navbar-light .navbar-nav .nav-link.actived {
+  font-weight: 700;
+}
+.navbar-nav button.btn.btnChamada {
+  background-color: #316b61;
+  color: #30b8a1;
+  padding: 10px;
+}
+.navbar-nav button.btn.btnChamada a {
+  color: #b5fff3;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
 /*Footer*/
 footer {
   background-color: rgb(108, 66, 50);
@@ -26,9 +51,19 @@ footer p {
   margin: 0;
   padding: 5px 20px;
 }
+footer a.linkImportante {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation-name: pisca;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 
 /*Main Home*/
 .carousel {
+  margin-top: 10vh;
   height: 82vh;
   overflow: hidden;
 }
@@ -108,6 +143,17 @@ rgba(110, 255, 228, 0.781) 40px,
 #curso ul {
   font-size: 14px;
 }
+#curso button.btn {
+  background-color: #316b61;
+  padding: 10px 20px;
+}
+#curso button.btn:hover {
+  background-color: #30b8a1;
+}
+#curso button.btn a {
+  color: white;
+  font-weight: 500;
+}
 /*Preço*/
 #precos .row {
   height: 200px;
@@ -126,18 +172,37 @@ rgba(110, 255, 228, 0.781) 40px,
 }
 #precos h3 {
   text-align: center;
-  padding: 30px 40px;
+  padding: 20px 40px;
   font-size: 40px;
 }
-#contacto {
-  height: 400px;
+#precos h3 span:first-child {
+  font-size: 30px;
+  text-decoration: line-through;
+  color: red;
+}
+#precos h3 span:last-child {
+  font-size: 45px;
+}
+#precos button.btn.btnChamada {
+  background-color: #eefffc!important;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #316b61;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 60px;
 }
 #contacto {
   background-color: rgba(110, 255, 228, 0.781);
 }
 #contacto .container {
   background-color: white;
-  padding: 50px 30px 20px 30px;
+  padding: 50px 30px 80px 30px;
+}
+#contacto .col-lg-5 div{
+  border-left: 3px solid #6c4232;
+  padding-left: 20px;
 }
 
 /*Pagina O Curso*/
@@ -150,7 +215,9 @@ video.videoLoop {
   z-index: -1;
   right: 0;
 }
-
+#ocurso {
+  margin-top: 12vh;
+}
 #ocurso .chamada {
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../img//curso/fotoChamada.jpg');
   background-repeat: no-repeat;
@@ -160,8 +227,39 @@ video.videoLoop {
   margin: 30px 2.5px 50px 2.5px;
   color: white;
 }
+#ocurso h3 {
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 40px;
+}
+#ocurso h3 span:first-child {
+  font-size: 30px;
+  text-decoration: line-through;
+  color: red;
+}
+#ocurso h3 span:last-child {
+  font-size: 45px;
+}
+#ocurso button.btn.btnChamada {
+  background-color: #eefffc!important;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #316b61;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 60px;
+}
 #infocurso {
   padding: 40px 0;
+}
+#infocurso button.btn.btnChamada {
+  background-color: #eefffc!important;
+  font-size: 15px;
+  color: #316b61;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 60px;
 }
 #infocurso .gridObject img {
   height: 150px;
@@ -173,6 +271,7 @@ video.videoLoop {
   grid-template-columns: auto;
   grid-template-rows: 150px 150px;
   row-gap: 15px;
+  overflow: hidden;
 }
 #infocurso .gridObject div:first-child {
   grid-row: 1/2;
@@ -191,4 +290,76 @@ video.videoLoop {
 #faq .btn-link {
   color: #316b61;
   font-weight: 500;
+}
+#faq .card-header  {
+  background-color: #bbe7e0;
+}
+
+/*PageFinal*/
+.siteImg {
+  -webkit-mask-image: linear-gradient(to right, transparent 5%, black 50%);
+  mask-image: linear-gradient(to left, rgba(0,0,0), rgba(0,0,0,0));
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 12vh;
+  z-index: -1;
+}
+#projeto {
+  margin-top: 15vh;
+}
+#autoavaliacao {
+  background-color: white;
+  padding-bottom: 80px;
+}
+#membro1 {
+  background-color: #e9f1f0;
+  padding: 30px 10px;
+  border-radius: 15px;
+}
+#autoavaliacao i {
+  font-size: 50px;
+}
+#membro2 {
+  background-color: #c4fff8;
+  padding: 30px 10px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+@keyframes pisca {
+  from {
+    color: white;
+    transition: color 1s;
+  }
+  to {
+    color: #b5fff3;
+    transition: color 1s;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #curso .cursoApresentacao .col-lg-2 {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  #home .carousel-caption {
+    display: none;
+  }
+  #precos .row {
+    height: 250px;
+  }
+  .siteImg {
+    display: none;
+  }
+ }
+
+@media (max-width: 575.98px) {
+  #precos h3 {
+    font-size: 30px;
+  }
+  #precos .row {
+    height: 300px;
+  }
 }
