@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="Carioca"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <button type="button" class="btn btn-primary"><a class="nav-item nav-link" href="#" tabindex="-1"
+          <a class="nav-item nav-link actived" href="#sobre">Sobre</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Curso
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#curso">Curso</a>
+              <a class="dropdown-item" href="pages/infoCurso.html">Mais Informação</a>
+            </div>
+          </div>
+          <a class="nav-item nav-link" href="#contacto">Contacto</a>
+          <button type="button" class="btn btnChamada"><a href="pages/infoCurso.html" tabindex="-1"
               aria-disabled="true">Increva-se</a></button>
         </div>
       </div>
@@ -38,6 +47,7 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -51,21 +61,24 @@
             <img src="img/brigadeiros/brigadeiro2.jpg" class="d-block" alt="Brigadeiro Especial">
             <div class="carousel-caption">
               <h5>Aprenda a fazer brigadeiros incríveis!</h5>
-              <p>Mesmo sem experiência! Com o Curso de Brigadeiros Gourmet qualquer um pode desenvolver suas técnicas de confeitaria e montar um lucrativo negócio de venda de doces! As receitas mais lucrativas e mais de 100  doces Gourmet (tradicionais, fitness, exóticos e muito mais)!</p>
+              <p>Mesmo sem experiência! Com o Curso de Brigadeiros Gourmet qualquer um pode desenvolver suas técnicas de
+                confeitaria e montar um lucrativo negócio de venda de doces!</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/brigadeiros/brigadeiro3.jpg" class="d-block" alt="Brigadeiros Diversos">
             <div class="carousel-caption">
               <h5>Design de embalagens</h5>
-              <p>Além das receitas e dicas de culinária, você também vai aprender como criar as mais bonitas embalagens para os seus doces, atrair novos clientes e gerir seus custos para potencializar seu negócio.</p>
+              <p>Além das receitas e dicas de culinária, você também vai aprender como criar as mais bonitas embalagens
+                para os seus doces, atrair novos clientes e gerir seus custos para potencializar seu negócio.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/brigadeiros/brigadeiro4.jpg" class="d-block" alt="Brigadeiros de diversos sabores">
             <div class="carousel-caption">
               <h5>Conquiste seu Certificado!</h5>
-              <p>Ao final do curso obtenha o Certificado de Mestre Brigadeireiro expedido pelos membros fundadores da Carioca. Este certificado é amplamente reconhecido nos mais variados restaurantes do mundo! </p>
+              <p>Ao final do curso obtenha o Certificado de Mestre Brigadeireiro expedido pelos membros fundadores da
+                Carioca. Este certificado é amplamente reconhecido nos mais variados restaurantes do mundo! </p>
             </div>
           </div>
         </div>
@@ -85,8 +98,17 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>Sobre nós</h2>
-            <p class="text-justify">  A origem do curso é ligada à campanha presidencial do Brigadeiro José Joaquim, candidato da à Presidência da República do Brasil em 1946. Jeniffer de Azevedo, membro de tradicional família carioca que apoiava a candidatura do brigadeiro, criou um tipo de doce, ligeiramente diferente da versão atual sendo feito com leite, ovos, manteiga, açúcar e chocolate, e o denominou com a patente do candidato preferido.</p>
-            <p class="text-justify">A guloseima, feita de leite condensado, manteiga, açúcar e chocolate em pó, inicialmente feita como uma forma de arrecadar fundos para a campanha, rapidamente ganhou popularidade e se espalhou pelo resto do país junto da campanha do Brigadeiro. Como as festas dos correligionários e cabos eleitorais eram muito disputadas pela população, estes logo começaram a chamar os amigos para irem comer o "docinho do brigadeiro". Com o tempo, foi criado o curso Carioca e este se tornou tão associado ao doce que o mais tarde passou a ser chamado Carioca Brigadeiros!</p>
+            <p class="text-justify"> A origem do curso é ligada à campanha presidencial do Brigadeiro José Joaquim,
+              candidato da à Presidência da República do Brasil em 1946. Jeniffer de Azevedo, membro de tradicional
+              família carioca que apoiava a candidatura do brigadeiro, criou um tipo de doce, ligeiramente diferente da
+              versão atual sendo feito com leite, ovos, manteiga, açúcar e chocolate, e o denominou com a patente do
+              candidato preferido.</p>
+            <p class="text-justify">A guloseima, feita de leite condensado, manteiga, açúcar e chocolate em pó,
+              inicialmente feita como uma forma de arrecadar fundos para a campanha, rapidamente ganhou popularidade e
+              se espalhou pelo resto do país junto da campanha do Brigadeiro. Como as festas dos correligionários e
+              cabos eleitorais eram muito disputadas pela população, estes logo começaram a chamar os amigos para irem
+              comer o "docinho do brigadeiro". Com o tempo, foi criado o curso Carioca e este se tornou tão associado ao
+              doce que o mais tarde passou a ser chamado Carioca Brigadeiros!</p>
 
 
           </div>
@@ -96,11 +118,11 @@
         </div>
         <div class="row">
           <div class="col-lg-12 imgRow">
-            <img src="img/curso/fotoCurso1.jpg" alt="">
-            <img src="img/curso/fotoCurso2.jpg" alt="">
-            <img src="img/curso/fotoCurso3.jpg" alt="">
-            <img src="img/curso/fotoCurso4.jpg" alt="">
-            <img src="img/curso/fotoCurso5.jpg" alt="">
+            <img src="img/curso/fotoCurso1.jpg" alt="Foto do Curso 1">
+            <img src="img/curso/fotoCurso2.jpg" alt="Foto do Curso 2">
+            <img src="img/curso/fotoCurso3.jpg" alt="Foto do Curso 3">
+            <img src="img/curso/fotoCurso4.jpg" alt="Foto do Curso 4">
+            <img src="img/curso/fotoCurso5.jpg" alt="Foto do Curso 5">
           </div>
         </div>
       </div>
@@ -114,7 +136,7 @@
         </div>
         <div class="row cursoApresentacao">
           <div class="col-lg-2">
-            <img src="img/brigadeiros/blueberry.jpg" alt="">
+            <img src="img/brigadeiros/blueberry.jpg" alt="Brigadeiro de blueberry">
           </div>
           <div class="col-lg-8 text-center">
             <h4>117º Edição Online do Curso Brigadeiro Carioca!</h4>
@@ -124,7 +146,7 @@
               muito mais)!</p>
           </div>
           <div class="col-lg-2">
-            <img src="img/brigadeiros/cookie.jpg" alt="">
+            <img src="img/brigadeiros/cookie.jpg" alt="Brigadeiro de cookie">
           </div>
         </div>
         <div class="row">
@@ -149,7 +171,7 @@
               <li>Como preparar uma boa Planilha Financeira</li>
               <li>Os segredos da confeitaria empreendedora</li>
             </ul>
-            <button class="d-flex ml-auto"><a href="">Veja mais!</a></button>
+            <button class="d-flex ml-auto btn"><a href="">Veja mais!</a></button>
           </div>
         </div>
       </div>
@@ -158,8 +180,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 p-0">
-            <h3>Oferta limitada!! De <span>€1500,00</span> por <span>€150,00</span></h3>
-            <button>Inscreva-se!</button>
+            <h3 class="mb-0">Oferta limitada!! De <span>€1500,00</span> por <span>€150,00</span></h3>
+            <button class="btn btnChamada">Inscreva-se!</button>
           </div>
         </div>
       </div>
@@ -169,28 +191,63 @@
         <div class="row">
           <div class="col-lg-7">
             <h2>Contacto</h2>
-            <form>
-              <div class="row">
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+              <div class="row pt-4">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" class="form-control" placeholder="First name" required>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <input type="email" class="form-control" placeholder="E-mail">
+                  <input type="text" class="form-control" placeholder="Last name" required>
                 </div>
               </div>
+              <div class="row pt-3">
+                <div class="col-7">
+                  <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Telemóvel">
+                </div>
+              </div>
+              <div class="form-group pt-2">
+                <label for="exampleFormControlSelect1">Assunto</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Inscrição</option>
+                  <option>Dúvida</option>
+                  <option>Pagamento</option>
+                  <option>Outro...</option>
+                </select>
+              </div>
+              <div class="form-group pt-2">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Escreva sua mensagem aqui..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary d-flex ml-auto">Enviar</button>
             </form>
           </div>
-          <div class="col-lg-5"></div>
+          <div class="col-lg-5">
+            <div>
+              <h4>Outras formas de contacto</h4>
+              <p class="pt-2 m-0">+351 999 000 999</p>
+              <p class="pt-1">Rua Porto, nº200 - Porto - Portugal</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48059.709547437946!2d-8.656973216519782!3d41.16220226566139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465abc4e153c1%3A0xa648d95640b114bc!2sPorto!5e0!3m2!1spt-BR!2spt!4v1593017017324!5m2!1spt-BR!2spt"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom d-flex align-items-center">
       <p>Site de estudos, desenvolvido por Jeniffer de Azevedo e José Joaquim de Azevedo</p>
+      <a href="pages/pageFinal.html" class="ml-auto mr-1 linkImportante"><svg class="bi bi-emoji-sunglasses" width="1em"
+          height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path fill-rule="evenodd"
+            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM6.5 6.497V6.5h-1c0-.568.447-.947.862-1.154C6.807 5.123 7.387 5 8 5s1.193.123 1.638.346c.415.207.862.586.862 1.154h-1v-.003l-.003-.01a.213.213 0 0 0-.036-.053.86.86 0 0 0-.27-.194C8.91 6.1 8.49 6 8 6c-.491 0-.912.1-1.19.24a.86.86 0 0 0-.271.194.213.213 0 0 0-.036.054l-.003.01z" />
+          <path
+            d="M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM9 5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-2-2V5z" />
+        </svg> Sobre o projeto</a>
     </footer>
   </main>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
